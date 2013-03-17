@@ -30,7 +30,6 @@ module CbcSpark
   end
 
   def bootstrap
-    puts "Bootstrapping"
   	episodes = []
   	data = HTTParty.get(BASE_URL)
   	raise Exceptions::ConnectionError unless data.code == 200
