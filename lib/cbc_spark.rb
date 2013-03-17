@@ -14,9 +14,11 @@ module CbcSpark
   end
 
   def latest
-  	episodes.first
+  	episodes.last
   end
 
+  # Fetches a particular episode by number,
+  # +episode_number+ is the number in the list, and may not necessarily be the actual episode number, since a few episodes are missing
   def get(episode_number)
   	episodes[episode_number-1]
   end
@@ -28,6 +30,7 @@ module CbcSpark
   end
 
   def bootstrap
+    puts "Bootstrapping"
   	episodes = []
   	data = HTTParty.get(BASE_URL)
   	raise Exceptions::ConnectionError unless data.code == 200
@@ -43,6 +46,6 @@ module CbcSpark
 			)
   	end
 
-  	episodes
+  	episodes.reverse
   end
 end
