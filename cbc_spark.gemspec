@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = CbcSpark::VERSION
   spec.authors       = ["Matt Harmes"]
   spec.email         = ["matt@harmes.ca"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Rubygem for accessing episodes from CBC Spark (http://cbc.ca/spark)}
+  spec.summary       = %q{Rubygem for accessing episodes from CBC Spark (http://cbc.ca/spark)}
+  spec.homepage      = "https://github.com/harmesy/cbc_spark"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

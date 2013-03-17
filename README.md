@@ -1,6 +1,6 @@
 # CbcSpark
 
-TODO: Write a gem description
+Rubygem for accessing episodes from [CBC Spark](http://cbc.ca/spark).
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can't do much yet. So far you can retrieve a list of all the episodes with `CbcSpark.list`, fetch a specific episode by number with `CbcSpark.get(x)` or the latest with `CbcSpark.latest`.
 
 ## Contributing
 
