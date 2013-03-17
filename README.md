@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/harmesy/cbc_spark.png?branch=master)](https://travis-ci.org/harmesy/cbc_spark)
+
 # CbcSpark
 
 Rubygem for accessing episodes from [CBC Spark](http://cbc.ca/spark).
